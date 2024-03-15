@@ -4,7 +4,7 @@ const Resume = () => {
   return (
     <section id="resume">
       <h2>Resume</h2>
-      <p>Add a link to your downloadable resume and list your proficiencies here.</p>
+      <p>Link to downloadable resume and listof developer's proficiences</p>
     </section>
   );
 };
