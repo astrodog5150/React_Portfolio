@@ -4,7 +4,7 @@ const Resume = () => {
   return (
     <section id="resume">
       <h2>Resume</h2>
-      <p>Link to downloadable resume and listof developer's proficiences</p>
+      <a href="/My%20Resume.pdf" download>Click to download resume pdf</a>
     </section>
   );
 };

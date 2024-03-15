@@ -1,28 +1,45 @@
 header {
   background-color: #282c34;
-  padding: 20px;
+  padding: 20px 0;
   width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* Add styles for Navigation */
 nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: flex;
 }
 
 nav ul li {
-  display: inline;
   margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
 }
 
 nav ul li a {
   text-decoration: none;
   color: white;
+  font-size: 18px;
+  font-weight: bold; /* Add bold font weight */
+  text-transform: uppercase; /* Convert text to uppercase */
+  transition: color 0.3s ease;
 }
 
-nav ul li a.active {
-  font-weight: bold;
+nav ul li a:hover {
+  color: #61dafb;
+}
+
+#name {
+  font-size: 28px; /* Increase font size */
+  color: #61dafb; /* Change color to stand out */
+  font-weight: bold; /* Ensure the name is bold */
 }
 
 /* Add styles for Footer */
@@ -71,7 +88,6 @@ img {
 }
 
 /* Add styles for project modules */
-/* Add styles for project modules */
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -83,8 +99,6 @@ img {
   margin-bottom: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-  /* Add max-height to make project modules less tall */
-  max-height: 500px; /* Adjust the value as needed */
   overflow: hidden; /* Hide any overflow content */
 }
 
@@ -97,14 +111,17 @@ img {
   height: auto;
 }
 
+.project h3 {
+  margin: 10px 0;
+}
+
 .project-links {
-  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .project-links a {
-  display: inline-block;
   padding: 8px 16px;
-  margin-right: 10px;
   background-color: #61dafb;
   color: #fff;
   text-decoration: none;
@@ -125,4 +142,49 @@ img {
   height: auto;
   max-height: 300px; /* Adjust the maximum height as needed */
   margin-bottom: 20px;
+}
+
+#contact {
+  text-align: center;
+  padding: 50px 20px; /* Adjust padding as needed */
+  background-color: #f9f9f9; /* Light background color */
+}
+
+#contact form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#contact label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#contact textarea {
+  height: 100px;
+}
+
+#contact button[type="submit"] {
+  background-color: #61dafb;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact button[type="submit"]:hover {
+  background-color: #46a2cc;
 }
